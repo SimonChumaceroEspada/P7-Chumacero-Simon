@@ -1,340 +1,337 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --color-primario: #020403;
-    --color-secundario: #ADADAD;
-    --color-terciario: #FFFFFF;
+:root {
+  --color-primario: #020403;
+  --color-secundario: #adadad;
+  --color-terciario: #ffffff;
 }
 
-body{
-    background-color: var(--color-primario);
-    font-family: 'Rubik', sans-serif;
+body {
+  background-color: var(--color-primario);
+  font-family: "Rubik", sans-serif;
 }
 
-.nav{
-    display: flex;
-    justify-content: end;
+.nav {
+  display: flex;
+  justify-content: end;
 }
 
-.list-nav{
-    display: none;
-    color: white;
+.list-nav {
+  display: none;
+  color: white;
 }
 
-.nav-i
-{
-    color: white;
-    font-size: 16px;
-    padding: 0;
+.nav-i {
+  color: white;
+  font-size: 17px;
+  position: relative;
 }
 
-.nav-i:hover{
-    border-bottom: 5px solid var(--color-terciario);
-    cursor: pointer;
+.nav-i:hover {
+  border-bottom: 5px solid var(--color-terciario);
+  cursor: pointer;
 }
 
-.icon{
-    align-self: flex-end;
-    margin: 1rem;
+.icon {
+  align-self: flex-end;
+  margin: 1rem;
 }
 
-
-.flex-section{
-    display: flex;
-    flex-direction: column;
-    /* background-color: darkcyan; */
-    align-items: center;
+.flex-section {
+  display: flex;
+  flex-direction: column;
+  /* background-color: darkcyan; */
+  align-items: center;
 }
 
-.picture{
-    max-width: 50%;
-    border-radius: 100%;
-    justify-content: center;
-    margin: 2rem;
+.picture {
+  max-width: 50%;
+  border-radius: 100%;
+  justify-content: center;
+  margin: 2rem;
 }
 
-
-.h2-presentation{
-    color: var(--color-secundario);
-    font-size: 25px;
+.h2-presentation {
+  color: var(--color-secundario);
+  font-size: 25px;
 }
 
-.h1-web-title{
-
-    color: var(--color-terciario);
-    font-weight: semibold;
-    font-size: 40px;
-    text-align: center;
-    margin: 2% 20%;
+.h1-web-title {
+  color: var(--color-terciario);
+  font-weight: semibold;
+  font-size: 40px;
+  text-align: center;
+  margin: 2% 20%;
 }
 
-
-.icon-container{
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
+.icon-container {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-
-.social-icon{
-    margin: 1rem;
+.social-icon {
+  margin: 1rem;
 }
 
-
-.about-me{
-    color: var(--color-terciario);
-    text-align: center;
-    padding: 2rem;
+#about-me {
+  color: var(--color-terciario);
+  text-align: center;
+  padding: 2rem;
 }
 
-.h2-mi{
-    padding: 1rem;
-    font-size: 25px;
+.h2-mi {
+  padding: 1rem;
+  font-size: 25px;
 }
 
-.p-mi{
-    font-size: 16px;
-    color: var(--color-secundario);
+.p-mi {
+  font-size: 16px;
+  color: var(--color-secundario);
 }
 
-
-
+a {
+  color: var(--color-terciario);
+  text-decoration: none;
+}
 
 /*Mis habilidades*/
-.skill-icons{
-    color: var(--color-terciario);
+.skill-icons {
+  color: var(--color-terciario);
 }
 
-.h3-skills{
-    color: var(--color-terciario);
-    text-align: center;
-    padding: 2rem;
-    font-size: 25px;
+.h3-skills {
+  color: var(--color-terciario);
+  text-align: center;
+  padding: 2rem;
+  font-size: 25px;
 }
 
-.icon-box{
-    text-align: center;
-    padding: 0.5rem;
-    display: flex;
-    list-style: none;
-    flex-direction: column;
-    align-items: center;
+.icon-box {
+  text-align: center;
+  padding: 0.5rem;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-
-.s-icon{
-    padding: 1rem;
+.s-icon {
+  padding: 1rem;
 }
 
-.a-icon{
-    justify-content: center;
-    /* border: 3px solid rgb(146, 146, 157); */
-    background-color: rgb(55, 55, 59);
-    border-radius: 50%;
-    text-align: center;
-    padding: 1rem;
-    margin-bottom: 1rem;
+.a-icon {
+  justify-content: center;
+  /* border: 3px solid rgb(146, 146, 157); */
+  background-color: rgb(55, 55, 59);
+  border-radius: 50%;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
 }
 
-.icon-description{
-    text-align: center;
-    padding-top: 1rem;
+.icon-description {
+  text-align: center;
+  padding-top: 1rem;
 }
 
 /*Section Experiencia*/
 
 .h3-experiencia {
-    color: var(--color-terciario);
-    text-align: center;
-    padding: 2rem;
-    font-size: 25px;
+  color: var(--color-terciario);
+  text-align: center;
+  padding: 2rem;
+  font-size: 25px;
 }
 
 .exp-box {
-    color: var(--color-terciario);
-    text-align: center;
-    display: grid;
-    grid-template-columns: 30rem;
-    max-width: 600px;
-    margin: 0 auto;
-    align-items: center;
-    row-gap: -2rem;
+  color: var(--color-terciario);
+  text-align: center;
+  display: grid;
+  grid-template-columns: 30rem;
+  max-width: 600px;
+  margin: 0 auto;
+  align-items: center;
+  row-gap: -2rem;
 }
 
-.exp-box>div {
-    text-align: left;
-    margin-left: 25%;
-    padding: 0;
-
+.exp-box > div {
+  text-align: left;
+  margin-left: 25%;
+  padding: 0;
 }
 
-.exp-box>p {
-    text-align: right;
-    padding: 0;
-    margin: 0;
-
+.exp-box > p {
+  text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
 .exp-box {
-    border-bottom: 1px solid #ADADAD;
+  border-bottom: 1px solid #adadad;
 }
 
 /*Section Portafolio*/
 .h3-portafolio {
-    color: var(--color-terciario);
-    text-align: left;
-    padding: 2rem;
-    font-size: 25px;
+  color: var(--color-terciario);
+  text-align: left;
+  padding: 2rem;
+  font-size: 25px;
 }
 
 .flex-p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.flex-p>img {
-    margin: 1rem 2rem;
+.flex-p > img {
+  margin: 1rem 2rem;
 }
 
 /*Section Contacto*/
 
 .h3-contacto {
-    color: var(--color-terciario);
-    text-align: left;
-    padding: 2rem;
-    font-size: 25px;
+  color: var(--color-terciario);
+  text-align: left;
+  padding: 2rem;
+  font-size: 25px;
 }
 
 .container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 5rem;
+  justify-content: space-evenly;
+  row-gap: 15%;
+  text-align: center;
+  color: rgb(67, 65, 65);
+}
+
+.box-cont > img {
+  justify-content: space-evenly;
+  border: 3px solid rgb(146, 146, 157);
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.box-cont {
+  color: var(--color-terciario);
+}
+
+footer {
+  padding: 5rem;
+  text-align: center;
+    color: var(--color-terciario);
+}
+
+@media screen and (min-width: 1000px) {
+  /*Header y imagen*/
+  .picture {
+    max-width: 25%;
+    border-radius: 100%;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  .icon {
+    display: none;
+  }
+
+  .list-nav {
+    display: flex;
+    list-style: none;
+  }
+
+  .nav-i {
+    padding: 2rem 1.5rem;
+  }
+
+  .nav-r {
+    margin-right: 3rem;
+  }
+
+  .nav-i a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px; /* Ajusta el padding según sea necesario */
+    box-sizing: border-box;
+  }
+  /*iconos desktop con grid*/
+
+  .icon-box {
+    display: grid;
+    grid-template-columns: 25% 25%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .picture {
+    max-width: 30%;
+    border-radius: 100%;
+    justify-content: center;
+    margin: 2rem;
+  }
+
+  .h3-experiencia {
+    color: var(--color-secundario);
+    font-size: 50px;
+  }
+
+  .h2-presentation {
+    color: var(--color-secundario);
+    font-size: 50px;
+  }
+
+  .h1-web-title {
+    font-size: 80px;
+    margin: 0% 20%;
+  }
+
+  .p-mi {
+    padding: 1rem 10rem;
+    font-size: 20px;
+  }
+
+  .h2-mi {
+    font-size: 50px;
+  }
+
+  .h3-skills {
+    font-size: 50px;
+  }
+
+  /*Section portafolio*/
+
+  .h3-portafolio {
+    color: var(--color-secundario);
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .flex-p {
     display: flex;
     flex-direction: row;
     padding: 0 5rem;
     justify-content: space-evenly;
-    row-gap: 15%;
+    row-gap: 5rem;
+  }
+
+  .flex-p > img {
+    max-width: 30%;
+  }
+
+  /*Section contacto*/
+  .h3-contacto {
+    color: var(--color-secundario);
+    font-size: 50px;
     text-align: center;
-    color: rgb(67, 65, 65);
-}
-
-.box-cont>img {
-    justify-content: space-evenly;
-    border: 3px solid rgb(146, 146, 157);
-    border-radius: 50%;
-    padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-footer {
-    padding: 5rem;
-    text-align: center;
-}
-
-@media screen and (min-width: 1000px) {
-
-    /*Header y imagen*/
-    .picture {
-        max-width: 25%;
-        border-radius: 100%;
-        justify-content: center;
-        margin: 2rem;
-    }
-
-    .icon {
-        display: none;
-    }
-
-    .list-nav {
-        display: flex;
-        list-style: none;
-    }
-
-    .nav-i {
-        padding: 2rem 1.5rem;
-    }
-
-    .nav-r {
-        margin-right: 3rem;
-    }
-
-    /*iconos desktop con grid*/
-
-    .icon-box {
-        display: grid;
-        grid-template-columns: 25% 25%;
-        justify-content: center;
-    }
-
-
-
-
-}
-
-@media screen and (min-width: 1200px) {
-
-    .picture {
-        max-width: 30%;
-        border-radius: 100%;
-        justify-content: center;
-        margin: 2rem;
-    }
-
-    .h3-experiencia {
-        color: var(--color-secundario);
-        font-size: 50px;
-    }
-
-    .h2-presentation {
-        color: var(--color-secundario);
-        font-size: 50px;
-    }
-
-    .h1-web-title {
-        font-size: 80px;
-        margin: 0% 20%;
-    }
-
-    .p-mi {
-        padding: 1rem 10rem;
-        font-size: 20px;
-    }
-
-    .h2-mi {
-        font-size: 50px;
-    }
-
-    .h3-skills {
-        font-size: 50px;
-    }
-
-    /*Section portafolio*/
-
-    .h3-portafolio {
-        color: var(--color-secundario);
-        font-size: 50px;
-        text-align: center;
-    }
-
-    .flex-p {
-        display: flex;
-        flex-direction: row;
-        padding: 0 5rem;
-        justify-content: space-evenly;
-        row-gap: 5rem;
-    }
-
-    .flex-p>img {
-        max-width: 30%;
-    }
-
-    /*Section contacto*/
-    .h3-contacto {
-        color: var(--color-secundario);
-        font-size: 50px;
-        text-align: center;
-    }
+  }
 }
