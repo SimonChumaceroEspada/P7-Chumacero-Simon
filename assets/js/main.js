@@ -42,3 +42,15 @@ function smoothScroll(target, callback) {
 
     window.requestAnimationFrame(step);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.list-nav');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+        
+        // Opcional: Animar el ícono hamburguesa
+        navToggle.classList.toggle('active');
+    });
+});

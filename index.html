@@ -13,7 +13,9 @@
 <body>
     <header>
         <nav class="nav">
-            <img src="./assets/Íconos/icon.svg" alt="icon" class="icon">
+            <button class="nav-toggle" aria-label="Abrir menú">
+                <img src="./assets/Íconos/icon.svg" alt="icon" class="hamburger">
+            </button>
             <ul class="list-nav">
                 <li class="nav-i"><a href="#home">Home</a></li>
                 <li class="nav-i"><a href="#about-me">Acerca de mi</a></li>
@@ -78,7 +80,7 @@
         </div>        
     </section>
 
-    <section id="experience">
+    <!-- <section id="experience">
             <h3 class="h3-experiencia">Experiencia</h3>
             <div class="exp-container">
                 <div class="exp-box">
@@ -98,7 +100,7 @@
                 </div>
             </div>
            
-    </section>
+    </section> -->
 
     <section id="portafolio">
         <h3 class="h3-portafolio">Portafolio</h3>
@@ -112,17 +114,25 @@
 
     <section id="contact">
         <h3 class="h3-contacto">Contacto</h3>
-        <div class="container">
-            <div class="box-cont">
-                <img src="./assets/Íconos/phone.svg" alt="phone" class="im1">
-                <p>Numero Celular</p>
-                <p> +591 69692192</p>
+        <div class="contact-container">
+            <div class="contact-box">
+                <div class="contact-icon">
+                    <img src="./assets/Íconos/phone.svg" alt="phone">
+                </div>
+                <div class="contact-info">
+                    <p class="contact-label">Numero Celular</p>
+                    <p class="contact-detail">+591 69692192</p>
+                </div>
             </div>
 
-            <div class="box-cont">
-                <img src="./assets/Íconos/mail 1.svg" alt="phone" class="im2">
-                <p>Email</p>
-                <p>simonchumacero26@gmail.com</p>
+            <div class="contact-box">
+                <div class="contact-icon">
+                    <img src="./assets/Íconos/mail 1.svg" alt="email">
+                </div>
+                <div class="contact-info">
+                    <p class="contact-label">Email</p>
+                    <p class="contact-detail">simonchumacero26@gmail.com</p>
+                </div>
             </div>
         </div>
     </section>
