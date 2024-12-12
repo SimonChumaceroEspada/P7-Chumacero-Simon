@@ -181,7 +181,7 @@ a {
 /*Section Portafolio*/
 .h3-portafolio {
   color: var(--color-terciario);
-  text-align: left;
+  text-align: center;
   padding: 2rem;
   font-size: 25px;
 }
@@ -532,4 +532,39 @@ footer {
     padding: 0.8rem 0;
     font-size: 0.9rem;
   }
+}
+
+/* Agregar después de los estilos de nav */
+.language-switch {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    gap: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--color-secundario);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.lang-btn.active {
+    background: var(--color-terciario);
+    color: var(--color-primario);
+}
+
+@media (max-width: 768px) {
+    .language-switch {
+        top: 15px;
+        left: 15px;
+    }
 }

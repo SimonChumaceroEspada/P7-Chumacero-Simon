@@ -53,4 +53,57 @@ document.addEventListener('DOMContentLoaded', () => {
         // Opcional: Animar el ícono hamburguesa
         navToggle.classList.toggle('active');
     });
+
+    // Funcionalidad del switch de idioma
+    const langButtons = document.querySelectorAll('.lang-btn');
+    const currentLang = localStorage.getItem('language') || 'es';
+    
+    // Establecer idioma inicial
+    setLanguage(currentLang);
+    
+    langButtons.forEach(btn => {
+        if (btn.dataset.lang === currentLang) {
+            btn.classList.add('active');
+        }
+        
+        btn.addEventListener('click', (e) => {
+            const lang = e.target.dataset.lang;
+            langButtons.forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            setLanguage(lang);
+            localStorage.setItem('language', lang);
+        });
+    });
 });
+
+function setLanguage(lang) {
+    // Actualizar textos del menú
+    document.querySelector('a[href="#home"]').textContent = translations[lang].home;
+    document.querySelector('a[href="#about-me"]').textContent = translations[lang].aboutMe;
+    document.querySelector('a[href="#my-skills"]').textContent = translations[lang].skills;
+    document.querySelector('a[href="#experience"]').textContent = translations[lang].experience;
+    document.querySelector('a[href="#portafolio"]').textContent = translations[lang].portfolio;
+    document.querySelector('a[href="#contact"]').textContent = translations[lang].contact;
+
+    // Actualizar textos principales
+    document.querySelector('.h2-presentation').textContent = translations[lang].hello;
+    document.querySelector('.h1-web-title').textContent = translations[lang].webTitle;
+    document.querySelector('.p-mi').textContent = translations[lang].aboutMeText;
+    
+    // Actualizar títulos de secciones
+    document.querySelector('.h2-mi').textContent = translations[lang].aboutMe;
+    document.querySelector('.h3-skills').textContent = translations[lang].skills;
+    document.querySelector('.h3-experiencia').textContent = translations[lang].experience;
+    document.querySelector('.h3-portafolio').textContent = translations[lang].portfolio;
+    document.querySelector('.h3-contacto').textContent = translations[lang].contact;
+
+    // Actualizar habilidades
+    document.querySelectorAll('.icon-descriptio').forEach((el, index) => {
+        const keys = ['mobileDesign', 'motionDesign', 'systemDesign', 'webDev'];
+        el.textContent = translations[lang][keys[index]];
+    });
+
+    // Actualizar contacto
+    document.querySelectorAll('.contact-label')[0].textContent = translations[lang].phone;
+    document.querySelectorAll('.contact-label')[1].textContent = translations[lang].email;
+}
