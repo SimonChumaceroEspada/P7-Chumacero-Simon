@@ -98,10 +98,31 @@ function setLanguage(lang) {
     document.querySelector('.h3-contacto').textContent = translations[lang].contact;
 
     // Actualizar habilidades
-    document.querySelectorAll('.icon-descriptio').forEach((el, index) => {
-        const keys = ['mobileDesign', 'motionDesign', 'systemDesign', 'webDev'];
-        el.textContent = translations[lang][keys[index]];
-    });
+    const skills = document.querySelectorAll('.icon-descriptio');
+    skills[0].textContent = translations[lang].responsiveDesign;
+    skills[1].textContent = translations[lang].cssSkills;
+    skills[2].textContent = translations[lang].communication;
+    skills[3].textContent = translations[lang].webDev;
+
+    // Actualizar experiencia
+    const expTitles = document.querySelectorAll('.job-title');
+    const expCompanies = document.querySelectorAll('.company');
+    const expDates = document.querySelectorAll('.date');
+
+    // Experiencia 1
+    expTitles[0].textContent = translations[lang].exp1.title;
+    expCompanies[0].textContent = translations[lang].exp1.company;
+    expDates[0].textContent = translations[lang].exp1.period;
+
+    // Experiencia 2
+    expTitles[1].textContent = translations[lang].exp2.title;
+    expCompanies[1].textContent = translations[lang].exp2.company;
+    expDates[1].textContent = translations[lang].exp2.period;
+
+    // Experiencia 3
+    expTitles[2].textContent = translations[lang].exp3.title;
+    expCompanies[2].textContent = translations[lang].exp3.company;
+    expDates[2].textContent = translations[lang].exp3.period;
 
     // Actualizar contacto
     document.querySelectorAll('.contact-label')[0].textContent = translations[lang].phone;

@@ -9,10 +9,25 @@ const translations = {
         hello: "Hola, soy Simon",
         webTitle: "Diseñador y desarrollador web",
         aboutMeText: "Un entusiasta de la programación que ama la creación de aplicaciones, el aprendizaje de nuevos lenguajes de programación, la lectura, los videojuegos y la búsqueda constante de nuevas oportunidades para crecer y desarrollar habilidades.",
-        mobileDesign: "Mobile app design",
-        motionDesign: "Motion Design",
-        systemDesign: "Creación de sistemas de diseño",
+        responsiveDesign: "Diseño Responsive",
+        cssSkills: "Uso de CSS",
+        communication: "Comunicación efectiva",
         webDev: "Desarrollo Web",
+        exp1: {
+            title: "Ayudante de Oficina",
+            company: "OCHC",
+            period: "2019-2021"
+        },
+        exp2: {
+            title: "Impresión de Planos",
+            company: "OCHC",
+            period: "2021-2023"
+        },
+        exp3: {
+            title: "Ayudante en Supervisión de Proyectos",
+            company: "OCHC",
+            period: "2023-Actualidad"
+        },
         phone: "Numero Celular",
         email: "Email"
     },
@@ -26,10 +41,25 @@ const translations = {
         hello: "Hi, I'm Simon",
         webTitle: "Web Designer and Developer",
         aboutMeText: "A programming enthusiast who loves creating applications, learning new programming languages, reading, gaming, and constantly seeking new opportunities to grow and develop skills.",
-        mobileDesign: "Mobile app design",
-        motionDesign: "Motion Design",
-        systemDesign: "Design System Creation",
+        responsiveDesign: "Responsive Design",
+        cssSkills: "CSS Proficiency",
+        communication: "Effective Communication",
         webDev: "Web Development",
+        exp1: {
+            title: "Office Assistant",
+            company: "OCHC",
+            period: "2019-2021"
+        },
+        exp2: {
+            title: "Blueprint Printing Specialist",
+            company: "OCHC",
+            period: "2021-2023"
+        },
+        exp3: {
+            title: "Project Supervision Assistant",
+            company: "OCHC",
+            period: "2023-Present"
+        },
         phone: "Phone Number",
         email: "Email"
     }
