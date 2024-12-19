@@ -29,7 +29,21 @@ const translations = {
             period: "2023-Actualidad"
         },
         phone: "Numero Celular",
-        email: "Email"
+        email: "Email",
+        projects: {
+            tourism: {
+                title: "Guía Interactiva de Turismo Bolivia",
+                description: "Aplicación web bilingüe que exhibe la riqueza cultural de Bolivia, construida con React y TypeScript. Ofrece una experiencia fluida con diseño responsive y gestión de contenido en la nube mediante Supabase."
+            },
+            api: {
+                title: "API de Lugares Turísticos (Backend)",
+                description: "API RESTful moderna desarrollada con .NET 8 y Clean Architecture. Sistema multilingüe escalable con PostgreSQL, documentación Swagger."
+            },
+            rickAndMorty: {
+                title: "Rick & Morty Explorer",
+                description: "Aplicación web interactiva que consume la API de Rick & Morty, construida con React. Presenta una interfaz dinámica para explorar personajes y episodios de la serie."
+            }
+        }
     },
     en: {
         home: "Home",
@@ -61,6 +75,20 @@ const translations = {
             period: "2023-Present"
         },
         phone: "Phone Number",
-        email: "Email"
+        email: "Email",
+        projects: {
+            tourism: {
+                title: "Interactive Tourism Guide Bolivia",
+                description: "Bilingual web application showcasing Bolivia's cultural heritage, built with React and TypeScript. Offers a smooth experience with responsive design and cloud content management using Supabase."
+            },
+            api: {
+                title: "Tourist Places API (Backend)",
+                description: "Modern RESTful API developed with .NET 8 and Clean Architecture. Scalable multilingual system with PostgreSQL, Swagger documentation."
+            },
+            rickAndMorty: {
+                title: "Rick & Morty Explorer",
+                description: "Interactive web application consuming the Rick & Morty API, built with React. Features a dynamic interface to explore characters and episodes from the series."
+            }
+        }
     }
 }; 

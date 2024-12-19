@@ -127,4 +127,20 @@ function setLanguage(lang) {
     // Actualizar contacto
     document.querySelectorAll('.contact-label')[0].textContent = translations[lang].phone;
     document.querySelectorAll('.contact-label')[1].textContent = translations[lang].email;
+
+    // Actualizar proyectos
+    const projectTitles = document.querySelectorAll('.project-title');
+    const projectDescriptions = document.querySelectorAll('.project-description');
+
+    // Proyecto 1 - Tourism Guide
+    projectTitles[0].textContent = translations[lang].projects.tourism.title;
+    projectDescriptions[0].textContent = translations[lang].projects.tourism.description;
+
+    // Proyecto 2 - API
+    projectTitles[1].textContent = translations[lang].projects.api.title;
+    projectDescriptions[1].textContent = translations[lang].projects.api.description;
+
+    // Proyecto 3 - Rick & Morty
+    projectTitles[2].textContent = translations[lang].projects.rickAndMorty.title;
+    projectDescriptions[2].textContent = translations[lang].projects.rickAndMorty.description;
 }
